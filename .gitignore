@@ -1,0 +1,496 @@
+# 🚫 Like a Dragon: Infinite Wealth Offline Setup Assistant - .gitignore
+
+# ========================================
+# 🔐 Security and Credentials
+# ========================================
+# CRITICAL: Never commit sensitive information
+.internal/GITHUB_CREDENTIALS.md
+*.key
+*.pem
+*.p12
+*.pfx
+config/secrets.*
+credentials.*
+.env
+.env.local
+.env.production
+secrets/
+
+# ========================================
+# 🛠️ Development Environment
+# ========================================
+
+# IDE and Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.sublime-*
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+
+# ========================================
+# 📦 Package Managers and Dependencies
+# ========================================
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+package-lock.json
+yarn.lock
+.npm
+.eslintcache
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+Pipfile.lock
+
+# Ruby
+*.gem
+*.rbc
+/.config
+/coverage/
+/InstalledFiles
+/pkg/
+/spec/reports/
+/spec/examples.txt
+/test/tmp/
+/test/version_tmp/
+/tmp/
+.bundle/
+vendor/bundle
+lib/bundler/man/
+
+# Go
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+go.work
+
+# Rust
+/target/
+**/*.rs.bk
+Cargo.lock
+
+# C/C++
+*.o
+*.a
+*.lib
+*.dll
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
+
+# ========================================
+# 🎮 Game and Application Files
+# ========================================
+
+# Game Installation Files
+game_files/
+installations/
+*.iso
+*.bin
+*.cue
+*.mdf
+*.mds
+*.img
+*.dmg
+
+# Setup Assistant Builds
+builds/
+releases/
+artifacts/
+*.msi
+*.deb
+*.rpm
+*.pkg
+*.app
+*.AppImage
+setup_*.exe
+installer_*.exe
+
+# Game Data and Saves
+saves/
+save_backups/
+user_data/
+screenshots/
+recordings/
+mods/
+plugins/
+addons/
+
+# Configuration Files (user-specific)
+config/user_*
+settings/user_*
+preferences/user_*
+*.user.config
+*.user.settings
+
+# ========================================
+# 🗄️ Databases and Logs
+# ========================================
+
+# Databases
+*.db
+*.sqlite
+*.sqlite3
+*.db3
+*.s3db
+*.sl3
+
+# Logs
+logs/
+*.log
+log_*
+debug_*
+error_*
+crash_*
+*.log.*
+*.out.*
+
+# ========================================
+# 🧪 Testing and Coverage
+# ========================================
+
+# Test Results
+test-results/
+coverage/
+.nyc_output/
+.coverage
+htmlcov/
+.tox/
+.pytest_cache/
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+
+# ========================================
+# 📊 Analytics and Monitoring
+# ========================================
+
+# Application Insights
+ApplicationInsights.config
+*.ai
+
+# Performance Profiling
+*.prof
+*.perf
+*.trace
+
+# ========================================
+# 🌐 Web and Network
+# ========================================
+
+# Certificates
+*.crt
+*.cer
+*.der
+ssl/
+certs/
+
+# Network Captures
+*.pcap
+*.pcapng
+*.cap
+
+# ========================================
+# 🖥️ Operating System Files
+# ========================================
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ========================================
+# ☁️ Cloud and Sync Services
+# ========================================
+
+# OneDrive
+OneDrive*
+.OneDriveTemp
+
+# Dropbox
+.dropbox
+.dropbox.attr
+.dropbox.cache
+
+# Google Drive
+.tmp.driveupload
+.tmp.drivedownload
+
+# ========================================
+# 🔄 Version Control
+# ========================================
+
+# Git
+.git/
+*.patch
+*.diff
+
+# SVN
+.svn/
+
+# Mercurial
+.hg/
+.hgignore
+
+# ========================================
+# 📱 Mobile Development
+# ========================================
+
+# Android
+*.apk
+*.aab
+*.ap_
+*.dex
+local.properties
+
+# iOS
+*.ipa
+*.mobileprovision
+*.p12
+
+# ========================================
+# 🎨 Design and Media
+# ========================================
+
+# Adobe Files
+*.psd
+*.ai
+*.indd
+*.sketch
+
+# Video Files (large)
+*.mov
+*.mp4
+*.avi
+*.mkv
+*.wmv
+*.flv
+*.webm
+
+# Audio Files (large)
+*.wav
+*.flac
+*.aac
+*.wma
+
+# Large Images
+*.tiff
+*.tif
+*.bmp
+*.raw
+
+# ========================================
+# 📦 Archives and Backups
+# ========================================
+
+# Compressed Files
+*.zip
+*.rar
+*.7z
+*.tar
+*.tar.gz
+*.tar.bz2
+*.tar.xz
+*.gz
+*.bz2
+*.xz
+
+# Backup Files
+*.bak
+*.backup
+*.old
+*.orig
+backup_*
+*_backup
+*.swp
+
+# ========================================
+# 🔧 Build Tools and CI/CD
+# ========================================
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+*.make
+
+# MSBuild
+[Bb]in/
+[Oo]bj/
+*.user
+*.userosscache
+*.sln.docstates
+
+# GitHub Actions
+.github/workflows/*.log
+
+# Docker
+.dockerignore
+Dockerfile.local
+docker-compose.override.yml
+
+# ========================================
+# 📚 Documentation Generation
+# ========================================
+
+# Sphinx
+docs/_build/
+docs/build/
+
+# Doxygen
+html/
+latex/
+
+# GitBook
+_book/
+
+# ========================================
+# 🎯 Project-Specific
+# ========================================
+
+# Setup Assistant Specific
+temp_install/
+extracted_files/
+setup_temp/
+install_logs/
+user_configs/
+crash_dumps/
+performance_logs/
+
+# Game Specific
+like_a_dragon_temp/
+ydd_temp/
+game_cache/
+shader_cache/
+
+# Development Tools
+tools/internal/
+scripts/dev_only/
+dev_builds/
+
+# ========================================
+# 📝 Custom Rules
+# ========================================
+
+# Add custom ignore patterns below
+# Remember to document why each pattern is needed
+
+# Example:
+# custom_folder/     # Contains sensitive development data
+
+# ========================================
+# ✅ Force Include Important Files
+# ========================================
+
+# Sometimes we want to include files that would normally be ignored
+# Use ! to force include them
+
+# Examples:
+# !important_config.example
+# !docs/build/sitemap.xml
+
+# ========================================
+# 📄 Notes for Contributors
+# ========================================
+
+# This .gitignore file is designed to:
+# 1. Protect sensitive information and credentials
+# 2. Prevent committing large binary files
+# 3. Keep the repository clean and focused
+# 4. Support multiple development environments
+# 5. Maintain security best practices
+#
+# When adding new patterns:
+# - Group similar patterns together
+# - Add comments explaining why patterns are needed
+# - Use specific patterns rather than overly broad ones
+# - Test patterns to ensure they work as expected
+#
+# For questions about specific patterns, check:
+# - GitHub's gitignore templates
+# - Project documentation
+# - Ask in Discord or GitHub discussions .internal/
+UNIVERSAL_SEO_TOOLKIT.md

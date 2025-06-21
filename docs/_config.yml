@@ -1,0 +1,251 @@
+# GitHub Pages Configuration for Like a Dragon: Infinite Wealth Offline Setup Assistant
+
+# Site Settings
+title: "Like a Dragon: Infinite Wealth — Offline Setup Assistant"
+description: "Experience the epic Yakuza RPG adventure completely offline - no Steam, no login, no internet required!"
+url: "https://Like-a-Dragon-Infinite-Wealth-Offline.github.io"
+baseurl: "/like-a-dragon-infinite-wealth-offline-setup-assistant"
+
+# Repository Information
+repository: "Like-a-Dragon-Infinite-Wealth-Offline/like-a-dragon-infinite-wealth-offline-setup-assistant"
+github_username: "Like-a-Dragon-Infinite-Wealth-Offline"
+
+# Author Information
+author:
+  name: "Like a Dragon Offline Team"
+  email: "info@like-a-dragon-offline.com"
+  twitter: "dragon_infinite"
+
+# Theme and Plugins
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-github-metadata
+  - jekyll-redirect-from
+
+# Theme Configuration
+minima:
+  skin: dark
+  social_links:
+    twitter: dragon_infinite
+    github: Like-a-Dragon-Infinite-Wealth-Offline
+    discord: https://discord.gg/dragon-infinite-wealth
+    youtube: https://youtube.com/c/like-a-dragon-offline
+
+# SEO Configuration
+lang: en_US
+logo: "/assets/images/logo.png"
+social:
+  name: "Like a Dragon Offline Setup Assistant"
+  links:
+    - https://twitter.com/dragon_infinite
+    - https://github.com/Like-a-Dragon-Infinite-Wealth-Offline
+    - https://discord.gg/dragon-infinite-wealth
+
+# Google Analytics (if needed)
+# google_analytics: G-XXXXXXXXXX
+
+# Search Engine Optimization
+seo:
+  type: WebSite
+  name: "Like a Dragon: Infinite Wealth Offline Setup Assistant"
+  headline: "Play Like a Dragon: Infinite Wealth completely offline"
+  description: "Professional setup assistant for playing Like a Dragon: Infinite Wealth without Steam, launchers, or internet connectivity. Features automatic configuration, save management, and multi-platform support."
+  url: "https://Like-a-Dragon-Infinite-Wealth-Offline.github.io/like-a-dragon-infinite-wealth-offline-setup-assistant"
+  logo: "https://Like-a-Dragon-Infinite-Wealth-Offline.github.io/like-a-dragon-infinite-wealth-offline-setup-assistant/assets/images/logo.png"
+
+# Build Settings
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# File Processing
+encoding: utf-8
+permalink: /:categories/:title/
+timezone: UTC
+
+# Directory Configuration
+source: docs
+destination: _site
+layouts_dir: _layouts
+includes_dir: _includes
+sass_dir: _sass
+
+# Collections
+collections:
+  guides:
+    output: true
+    permalink: /:collection/:name/
+  api:
+    output: true
+    permalink: /:collection/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Like a Dragon Offline Team"
+  - scope:
+      path: ""
+      type: "guides"
+    values:
+      layout: "guide"
+  - scope:
+      path: ""
+      type: "api"
+    values:
+      layout: "api"
+
+# Navigation
+header_pages:
+  - index.md
+  - installation-guide.md
+  - troubleshooting.md
+  - community.md
+
+# Custom Variables
+gaming:
+  game_name: "Like a Dragon: Infinite Wealth"
+  game_series: "Yakuza/Like a Dragon"
+  developer: "Ryu Ga Gotoku Studio"
+  publisher: "SEGA"
+  platforms: ["Windows", "macOS", "Linux"]
+  
+project:
+  version: "2.1.0"
+  release_date: "2024-01-15"
+  license: "MIT"
+  languages: ["English", "Japanese", "Chinese (Simplified)", "Chinese (Traditional)", "Korean", "Spanish", "French", "German", "Portuguese", "Russian", "Italian", "Dutch", "Polish", "Turkish", "Arabic"]
+
+features:
+  offline_gaming: true
+  no_drm: true
+  multi_platform: true
+  save_management: true
+  graphics_optimization: true
+  controller_support: true
+  multi_language: true
+
+# Exclude from Processing
+exclude:
+  - README.md
+  - LICENSE
+  - CHANGELOG.md
+  - CONTRIBUTING.md
+  - CODE_OF_CONDUCT.md
+  - SECURITY.md
+  - .github/
+  - .gitignore
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - package.json
+  - package-lock.json
+  - webpack.config.js
+  - gulpfile.js
+  - _config.dev.yml
+
+# Include in Processing
+include:
+  - .htaccess
+  - _pages
+
+# Compression
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  startings: [html, head, body]
+  blanklines: false
+  profile: false
+
+# Development Settings (for local development)
+livereload: true
+incremental: true
+profile: true
+
+# Custom CSS/JS
+custom_css:
+  - "/assets/css/gaming-theme.css"
+  - "/assets/css/download-buttons.css"
+
+custom_js:
+  - "/assets/js/platform-detection.js"
+  - "/assets/js/analytics.js"
+
+# External Links
+external_links:
+  github_repo: "https://github.com/Like-a-Dragon-Infinite-Wealth-Offline/like-a-dragon-infinite-wealth-offline-setup-assistant"
+  releases: "https://github.com/Like-a-Dragon-Infinite-Wealth-Offline/like-a-dragon-infinite-wealth-offline-setup-assistant/releases"
+  issues: "https://github.com/Like-a-Dragon-Infinite-Wealth-Offline/like-a-dragon-infinite-wealth-offline-setup-assistant/issues"
+  discussions: "https://github.com/Like-a-Dragon-Infinite-Wealth-Offline/like-a-dragon-infinite-wealth-offline-setup-assistant/discussions"
+  discord: "https://discord.gg/dragon-infinite-wealth"
+  twitter: "https://twitter.com/dragon_infinite"
+  youtube: "https://youtube.com/c/like-a-dragon-offline"
+
+# RSS Feed
+feed:
+  posts_limit: 20
+  excerpt_only: true
+
+# Comments (if using)
+# comments:
+#   provider: "disqus"
+#   disqus:
+#     shortname: "like-a-dragon-offline"
+
+# Analytics
+analytics:
+  provider: "google-gtag"
+  google:
+    tracking_id: # Add if needed
+    anonymize_ip: true
+
+# Search
+search_enabled: true
+search_tokenizer_separator: /[\s/]+/
+
+# Gaming-specific metadata
+game_metadata:
+  esrb_rating: "M for Mature"
+  pegi_rating: "18"
+  genres: ["JRPG", "Adventure", "Turn-based Combat"]
+  themes: ["Crime Drama", "Comedy", "Friendship"]
+  setting: ["Modern Japan", "Hawaii"]
+  
+technical_specs:
+  engine: "Dragon Engine"
+  supported_resolutions: ["1920x1080", "2560x1440", "3840x2160"]
+  supported_framerates: ["30fps", "60fps", "120fps"]
+  input_methods: ["Keyboard + Mouse", "Xbox Controller", "PlayStation Controller", "Generic Gamepad"]
+
+# Sitemap Configuration
+sitemap:
+  priority: 1.0
+  changefreq: "monthly"
+  lastmod: "2024-01-15"
+
+# Robots
+robots:
+  enabled: true
+  policy: "index, follow"
+
+# OpenGraph and Twitter Cards
+opengraph:
+  enabled: true
+  type: "website"
+  image: "/assets/images/og-image.png"
+  image_alt: "Like a Dragon: Infinite Wealth Offline Setup Assistant"
+
+twitter_card:
+  enabled: true
+  type: "summary_large_image"
+  site: "@dragon_infinite"
+  creator: "@dragon_infinite" 
